@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smhrd.mapper.BoardMapper">
+
+    <!--  공지사항 전체보기 -->
+   <select id="noticeList" resultType="com.smhrd.entity.Notice">
+      SELECT * FROM NOTICE ORDER BY NOTICE_AT DESC
+   </select>
+   
+   <!-- 위해물품 월별 합산 전체 작업량보기 -->
+   <select id="workloadList" resultType="com.smhrd.entity.MonthlySum">
+      SELECT
+          TO_CHAR(WORK_AT, 'MM') AS month,
+          COUNT(*) AS total_y
+      FROM WORKLOAD
+      WHERE WORK_PRESENCE = 'Y'
+      GROUP BY TO_CHAR(WORK_AT, 'MM')
+   </select>
+   
+   <!-- 위해물품 탐지 주간 합산 전체 작업량 보기 -->
+   <select id="workloadListWeek" resultType="com.smhrd.entity.MonthlySum">
+      SELECT 
+	     TO_CHAR(TRUNC(WORK_AT, 'IW'), 'MM/DD') AS week_start,
+	     COUNT(*) AS total_y
+	  FROM WORKLOAD
+	  WHERE WORK_PRESENCE = 'Y'
+	  GROUP BY TRUNC(WORK_AT, 'IW')
+	  ORDER BY TRUNC(WORK_AT, 'IW')
+   </select>
+   
+   <!-- Detection테이블과 type테이블 조인으로 알림사항 전체보기 -->
+   <select id="detectionalarmList" parameterType="String" resultType="com.smhrd.entity.DetectAlarm">
+      SELECT TYPE_NAME_ENG,IDENTIFI_ID
+     FROM TYPE A, DETECTION B
+     WHERE A.TYPE_NUM(+) = B.TYPE_NUM AND IDENTIFI_ID=#{memID} AND <![CDATA[ROWNUM<=6]]>
+     ORDER BY DETECTION_DATE DESC
+   </select>
+   
+   
+   <!-- 모든 회원정보 list불러오기. -->
+   <select id="getMemberAll" resultType="com.smhrd.entity.Member">
+      SELECT * FROM MEMBER 
+        ORDER BY JOINED_AT DESC
+   </select>
+   
+      
+   <!-- 실시간 분석 - 위해물품 탐지시 stop 일어난뒤 DB Detection테이블에 insert 기능 -->
+   <insert id="detectionInsert" parameterType="com.smhrd.entity.Detection">
+      INSERT INTO DETECTION(IDENTIFI_ID,TYPE_NUM,DETECTION_FILE)
+      VALUES(#{IDENTIFI_ID},#{TYPE_NUM},#{DETECTION_FILE})
+   </insert>
+   
+   <!-- 실시간 분석 - 위해물품 탐지시 stop 일어난뒤 DB Workload테이블에 insert 기능 -->
+   <insert id="workloadInsert" parameterType="com.smhrd.entity.Workload">
+      INSERT INTO WORKLOAD(IDENTIFI_ID,WORK_PRESENCE)
+      VALUES(#{IDENTIFI_ID},#{WORK_PRESENCE})
+   </insert>
+   
+   
+   <!-- 금일 오늘 날짜 불러오기. -->
+   <select id="getToday" resultType="com.smhrd.entity.TodayYN">
+      SELECT TO_CHAR(SYSDATE, 'YYYY-MM-DD') AS today
+      FROM DUAL
+   </select>
+   
+   <!-- 어제 날짜 불러오기. -->
+   <select id="getYesterday" resultType="com.smhrd.entity.DailyStatis">
+      SELECT TO_CHAR(SYSDATE -1, 'YYYY-MM-DD') AS yesterday FROM dual
+   </select>
+   
+   <!-- 금일(오늘) Y의 총갯수 가져오기 -->
+   <select id="gettodayY" parameterType="String" resultType="com.smhrd.entity.TodayYN">
+      SELECT COUNT(WORK_PRESENCE) AS TODAY_Y
+      FROM WORKLOAD
+      WHERE TO_CHAR(WORK_AT, 'YYYY-MM-DD') =#{today}
+      AND work_presence = 'Y'
+   </select>
+   
+   <!-- 금일(오늘) N의 총갯수 가져오기 -->
+   <select id="gettodayN" parameterType="String" resultType="com.smhrd.entity.TodayYN">
+      SELECT COUNT(WORK_PRESENCE) AS TODAY_N
+      FROM WORKLOAD
+      WHERE TO_CHAR(WORK_AT, 'YYYY-MM-DD') =#{today}
+      AND work_presence = 'N'
+   </select>
+   
+   
+   <!-- 이번주 가장 많은 TYPE_NUM구하는 오라클 SQL쿼리 -->
+   <select id="getMaxTypeThis" resultType="com.smhrd.entity.StatisTypecount">
+      WITH this_week AS (
+	     SELECT DETECTION_DATE, type_num
+	     FROM DETECTION
+	     WHERE DETECTION_DATE BETWEEN TRUNC(SYSDATE, 'IW') AND NEXT_DAY(TRUNC(SYSDATE, 'IW') - 1, '일')
+	  ),
+	  type_count AS (
+	     SELECT type_num, COUNT(*) AS type_count
+	     FROM this_week
+	     GROUP BY type_num
+	  )
+	  SELECT type_num AS thistype,
+		   type_count AS this_typecnt
+	  FROM type_count
+	  WHERE type_count = (SELECT MAX(type_count) FROM type_count)
+   </select>
+   
+   
+   <!-- 저번주 가장 많은 TYPE_NUM구하는 오라클 SQL쿼리 -->
+   <select id="getLastMaxType" resultType="com.smhrd.entity.StatisTypecount">
+      WITH last_week AS (
+	      SELECT DETECTION_DATE, TYPE_NUM
+	      FROM DETECTION
+	      WHERE DETECTION_DATE BETWEEN TRUNC(SYSDATE, 'IW') - 7 AND NEXT_DAY(TRUNC(SYSDATE, 'IW') - 8, '일')
+	  ),
+	  type_count AS (
+	      SELECT TYPE_NUM, COUNT(*) AS type_count
+	      FROM last_week
+	      GROUP BY TYPE_NUM
+	  )
+	  SELECT type_num AS lasttype,
+	         type_count AS last_typecnt
+	  FROM type_count
+	  WHERE type_count = (SELECT MAX(type_count) FROM type_count)
+   </select>
+   
+   
+   <!-- 이번달 가장 많은 TYPE_NUM구하는 오라클 SQL쿼리 -->
+   <select id="getMaxTypeThisMonth" resultType="com.smhrd.entity.StatisTypecount">
+      WITH this_month AS (
+	     SELECT DETECTION_DATE, TYPE_NUM
+	     FROM DETECTION
+	     WHERE DETECTION_DATE BETWEEN TRUNC(SYSDATE, 'MM') AND LAST_DAY(SYSDATE)
+	  ),
+	 type_count AS (
+	     SELECT TYPE_NUM, COUNT(*) AS type_count
+	     FROM this_month
+	     GROUP BY TYPE_NUM
+	 )
+	 SELECT type_num AS thistype,
+		   type_count AS this_typecnt
+	 FROM type_count
+	 WHERE type_count = (SELECT MAX(type_count) FROM type_count)
+   </select>
+   
+   
+   <!-- 저번달 가장 많은 TYPE_NUM구하는 오라클 SQL쿼리 -->
+   <select id="getLastmonthMaxType" resultType="com.smhrd.entity.StatisTypecount">
+      WITH last_month AS (
+	     SELECT DETECTION_DATE, type_num
+	     FROM DETECTION
+	     WHERE DETECTION_DATE BETWEEN TRUNC(ADD_MONTHS(SYSDATE, -1), 'MM') AND LAST_DAY(ADD_MONTHS(SYSDATE, -1))
+	  ),
+	  type_count AS (
+	     SELECT type_num, COUNT(*) AS type_count
+	     FROM last_month
+	     GROUP BY type_num
+	  )
+	  SELECT type_num AS lasttype,
+	         type_count AS last_typecnt
+	  FROM type_count
+	  WHERE type_count = (SELECT MAX(type_count) FROM type_count)
+   </select>
+   
+   
+   <!-- 해당 유저의 이상탐지기록 :탐지된품목 번호로 탐지(DETECTION)테이블과 품목이름 결합하여 출력하는 기능. -->
+   <select id="detectionCombinationType" parameterType="String" resultType="com.smhrd.entity.Detection">
+     SELECT TYPE_NAME_ENG,DETECTION_IDX,IDENTIFI_ID,DETECTION_DATE,DETECTION_FILE
+	 FROM TYPE A, DETECTION B
+	 WHERE A.TYPE_NUM(+) = B.TYPE_NUM AND IDENTIFI_ID=#{memID} AND <![CDATA[ROWNUM<=6]]>
+	 ORDER BY DETECTION_DATE DESC     
+   </select>
+   
+   <!-- 타입번호로 타입이름 가져오기.-->
+   <select id="getTypeName" parameterType="Integer" resultType="com.smhrd.entity.StatisTypecount">
+      select TYPE_NAME_ENG AS type_name
+	  FROM TYPE WHERE TYPE_NUM =#{typenum}
+   </select>
+   
+   
+   <!-- 선택 공지사항 삭제하기 -->
+   <delete id="boardDelete" parameterType="int">
+      DELETE FROM NOTICE WHERE NOTICE_IDX = #{idx}
+   </delete>
+   
+   
+    <!-- 공지사항 글작성하기 기능 -->
+    <insert id="createNotice" parameterType="com.smhrd.entity.CreateNotice">
+      INSERT INTO NOTICE (NOTICE_TITLE,NOTICE_DETAIL)
+      VALUES(#{noticeTITLE}, #{noticeDETAIL})
+    </insert>
+   
+      
+    <!-- 공지사항 글수정하기  -->  
+    <update id="modifyNotice" parameterType="com.smhrd.entity.CreateNotice">
+       UPDATE NOTICE SET NOTICE_TITLE=#{noticeTITLE},NOTICE_DETAIL=#{noticeDETAIL} 
+       WHERE NOTICE_IDX=#{noticeIDX}
+    </update>
+
+
+</mapper>
