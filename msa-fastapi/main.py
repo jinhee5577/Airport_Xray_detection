@@ -178,3 +178,4 @@ async def predict(imgobj : SendImg):  # 이미지 파일 이름 가져옴.
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)  # 메인
+    
