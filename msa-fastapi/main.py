@@ -33,10 +33,10 @@ app.add_middleware(
 
 # YOLO 모델 로드
 # 칼,총,가위,랜치,펜치 탐지
-model = YOLO(r'C:\Users\User\yoloray\msa-fastapi\models\v1.0.1_240613.pt') # 모델 경로 맞추어서 폴더 경로 이동해야함.
+model = YOLO(r'C:\Users\dkfld\Desktop\yoloyayPR\msa-fastapi\models\v1.0.1_240613.pt') # 모델 경로 맞추어서 폴더 경로 이동해야함.
 
 # 칼,총 탐지
-model2 = YOLO(r'C:\Users\User\yoloray\msa-fastapi\models\v1.0.0_240610.pt') # 모델 경로 맞추어서 폴더 경로 이동해야함.
+model2 = YOLO(r'C:\Users\dkfld\Desktop\yoloyayPR\msa-fastapi\models\v1.0.0_240610.pt') # 모델 경로 맞추어서 폴더 경로 이동해야함.
 testnum = 0
 
 
@@ -58,12 +58,12 @@ async def modelChange(modelName : str) :
 
     if modelName == 'model1' :
         # 칼,총,가위,랜치,펜치 탐지
-        model = YOLO(r'C:\Users\User\yoloray\msa-fastapi\models\v1.0.1_240613.pt') # 모델 경로 맞추어서 폴더 경로 이동해야함.
+        model = YOLO(r'C:\Users\dkfld\Desktop\yoloyayPR\msa-fastapi\models\v1.0.1_240613.pt') # 모델 경로 맞추어서 폴더 경로 이동해야함.
         testnum = 1
     else :  
         print(modelName)  
         # 칼,총 탐지
-        model = YOLO(r'C:\Users\User\yoloray\msa-fastapi\models\v1.0.0_240610.pt') # 모델 경로 맞추어서 폴더 경로 이동해야함.
+        model = YOLO(r'C:\Users\dkfld\Desktop\yoloyayPR\msa-fastapi\models\v1.0.0_240610.pt') # 모델 경로 맞추어서 폴더 경로 이동해야함.
         testnum = 2
     print(testnum) 
 
@@ -90,7 +90,7 @@ async def predict(imgobj : SendImg):  # 이미지 파일 이름 가져옴.
 
     try:
         # 이미지 저장시킬 경로 설정
-        base_path = r'C:\Users\User\git\repository9\msa-spring\frontend\src\assets\img\yolo_img'  # react 폴더 경로
+        base_path = r'C:\Users\dkfld\Desktop\yoloyayPR\frontend\src\assets\img\yolo_img'  # react 폴더 경로
        # base_path = r'C:\Users\dkfld\Desktop\yoloray\frontend\public\detectImg'  # react 폴더 경로          
         image_path = os.path.join(base_path, imageName)
         # contents = await file.read() # 파일 읽어오기
@@ -99,7 +99,7 @@ async def predict(imgobj : SendImg):  # 이미지 파일 이름 가져옴.
        # image = Image.open(imageName)
         #image = Image.open(io.BytesIO(imageName)).convert("RGB") # RGB 형식 변환
         #print(image)
-        path1 = (r'C:\Users\User\git\repository9\msa-spring\frontend\src\assets\img\yolo_img') # react 폴더 경로
+        path1 = (r'C:\Users\dkfld\Desktop\yoloyayPR\frontend\src\assets\img\yolo_img') # react 폴더 경로
         fullPath = os.path.join(path1, imageName)
         print(fullPath)
         image_path2 = fullPath
@@ -177,4 +177,4 @@ async def predict(imgobj : SendImg):  # 이미지 파일 이름 가져옴.
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000, debug=True)  # 메인
+    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)  # 메인
