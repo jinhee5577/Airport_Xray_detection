@@ -57,6 +57,7 @@
 
 ## 💻 YOLORAY Main페이지 입니다.
 <img width="850" alt="mainps" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/aa4a8003-2cba-4313-be78-c889bf035e91">
+<img width="850" alt="mainps" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/74a8676b-a98a-41ea-8273-14a160c63554">
 
 ## 💻 YOLORAY 실시간분석, 분석다시보기/단건분석 페이지 입니다.
 <img width="410" alt="실시간분석 페이지" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/402d77d0-af75-4c7c-a62f-dec0a7523e74">
@@ -65,8 +66,11 @@
 
 
 ## 💻 YOLORAY 관리자화면 - 회원관리, 공지사항 작성/모델 업데이트 페이지 입니다.
-<img width="410" alt="실시간분석 페이지" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/402d77d0-af75-4c7c-a62f-dec0a7523e74">
-<img width="410" alt="단건분석 페이지" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/be46e3f1-1eb3-4c48-b4ae-bced15a7f5fb">
+<img width="410" alt="회원관리 페이지" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/f2c8a01b-f1c4-45a6-9c49-6c6db0ae0396">
+<img width="410" alt="회원관리 페이지" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/a06acd88-c8d9-4c83-83d0-72be561254e9">
+<img width="600" alt="공지사항 페이지" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/965f5bb7-d03e-4c4b-a8c6-5c74afa30a22">
+<img width="410" alt="모델 업데이트 페이지" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/d1372440-fd20-4a64-add0-fc71aa8ed426">
+<img width="410" alt="모델 업데이트 페이지" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/3446488c-27ab-423c-89bd-b0f652f0783b">
 
 
 
