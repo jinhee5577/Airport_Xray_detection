@@ -61,7 +61,7 @@
 ## 💻 YOLORAY 실시간분석, 분석다시보기/단건분석 페이지 입니다.
 <img width="410" alt="실시간분석 페이지" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/402d77d0-af75-4c7c-a62f-dec0a7523e74">
 <img width="410" alt="단건분석 페이지" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/be46e3f1-1eb3-4c48-b4ae-bced15a7f5fb">
-<img width="410" alt="단건분석 페이지" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/80314cbc-6f15-4a15-b86f-3718ec9ac02c">
+<img width="600" alt="단건분석 페이지" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/80314cbc-6f15-4a15-b86f-3718ec9ac02c">
 
 
 ## 💻 YOLORAY 관리자화면 - 회원관리, 공지사항 작성/모델 업데이트 페이지 입니다.
