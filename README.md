@@ -59,8 +59,8 @@
 <img width="850" alt="mainps" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/aa4a8003-2cba-4313-be78-c889bf035e91">
 
 ## 💻 YOLORAY 실시간분석, 분석다시보기/단건분석 페이지 입니다.
-<img width="410" alt="실시간분석 페이지" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/402d77d0-af75-4c7c-a62f-dec0a7523e74">
-<img width="410" alt="단건분석 페이지" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/be46e3f1-1eb3-4c48-b4ae-bced15a7f5fb">
+<img width="420" alt="실시간분석 페이지" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/402d77d0-af75-4c7c-a62f-dec0a7523e74">
+<img width="420" alt="단건분석 페이지" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/be46e3f1-1eb3-4c48-b4ae-bced15a7f5fb">
 
 
 ----
