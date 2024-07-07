@@ -27,8 +27,7 @@
 <img width="650" alt="mainps" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/007e8a6f-f54e-4c26-813d-fc59a7221c5a">
 
 ## 🌟개발 기능
-![스크린샷 2024-06-29 212332](https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/c93e62b2-23c4-4f5e-a5ec-32cebe19643c)
-
+<img width="650" alt="mainps" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/c93e62b2-23c4-4f5e-a5ec-32cebe19643c">
 
 ---- 
 <br>
@@ -43,7 +42,7 @@
 <br>
 
 ## 📝 메뉴구성
-<img width="700" alt="진희팀 유스2" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/3159a63c-b914-4df3-af85-f22542dca35b">
+<img width="650" alt="진희팀 유스2" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/3159a63c-b914-4df3-af85-f22542dca35b">
 
 ## 🔄서비스 흐름도
 <img width="749" alt="PLAYScent최종 서비스흐름도" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/157596156/33ea78be-c9a3-4309-a6fc-1fa7a565cacf">
