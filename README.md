@@ -1,7 +1,7 @@
 # Airport_Xray_detection
 실전 융합 - 딥러닝을 이용한 공항 X-ray위해물품 자동 탐지시스템 프로젝트 repository 입니다.
 
-# 💡실전 융합 - 딥러닝을 이용한 공항 X-ray위해물품 자동 탐지시스템 프로젝트
+## 💡실전 융합 - 딥러닝을 이용한 공항 X-ray위해물품 자동 탐지시스템 프로젝트
 
 ----
 
@@ -39,14 +39,15 @@
 ## 📅개발 기간 :  2024.05.06 ~ 2024.06.19
 
 ### ⛏ 개발 스택 : Spring, FastAPI, React, YOLOv8, Oracle, MyBatis, JAVA, Javascript, python, Slack, Jira, Apache, Github
-![사용언어](https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/157596156/a1a14a35-aa8a-4892-ba1b-fdf7f38971e2)
+![스크린샷 2024-06-29 212249](https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/8fbc26b3-8190-4c9c-80f0-8b45f1b0dff6)
 
 ----
 
 <br>
 
-## 📝 유스케이스
-<img width="700" alt="진희팀 유스2" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/157596156/1a8fc9c4-f9ec-43a5-955a-51c635786d13">
+## 📝 메뉴구성
+<img width="700" alt="진희팀 유스2" src="![스크린샷 2024-07-07 211344](https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/3159a63c-b914-4df3-af85-f22542dca35b)
+">
 
 ## 🔄서비스 흐름도
 <img width="749" alt="PLAYScent최종 서비스흐름도" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/157596156/33ea78be-c9a3-4309-a6fc-1fa7a565cacf">
