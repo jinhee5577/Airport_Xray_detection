@@ -1,7 +1,7 @@
 # Airport_Xray_detection
 실전 융합 - 딥러닝을 이용한 공항 X-ray위해물품 자동 탐지시스템 프로젝트 repository 입니다.
 
-## 💡실전 융합 - 딥러닝을 이용한 공항 X-ray위해물품 자동 탐지시스템 프로젝트
+# 💡실전 융합 - 딥러닝을 이용한 공항 X-ray위해물품 자동 탐지시스템 프로젝트
 
 ----
 
@@ -53,9 +53,9 @@
 ----
 
 ## 📝 ERD
-![PSERD2](https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/157596156/5de04b42-13af-498d-b229-693e536662cd)
+![스크린샷 2024-06-29 212236](https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/79471fec-1489-4825-9c3b-b2b0efc8ac96)
 
-## 💻 PLAY SCENT Main페이지 입니다.
+## 💻 YOLORAY Main페이지 입니다.
 <img width="650" alt="mainps" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/157596156/b2821843-255c-4d1a-b1f1-df3784b653f4">
 
 ## 💻 PLAY SCENT 서브페이지 입니다.
@@ -81,7 +81,7 @@
 
 
 ## 🔖팀원소개 및 상세역활.
-<img width="796" alt="팀원소개" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/157596156/9422d7a3-b0c4-4371-8edd-419bdd9f3cf4">
+<img width="796" alt="팀원소개" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/3afffe0a-56ae-4a2a-9420-dd8c126621d1">
 
 ----
 
