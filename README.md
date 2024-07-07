@@ -89,21 +89,16 @@
 <br>
 
 ## 🛠️ 트러블 이슈.
-- ### 1). 파이썬 Flask 서버와 자바의 jsp 사이의 데이터 전송에 대해  언어가 서로 달라 어떻게 <br>
-  전송해야할지 에대해 매몰되어 너무어렵게 생각하였다.
-  <img width="785" alt="image" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/157596156/3e66b393-5669-4da8-af68-8e764d130f76">
+- ### 1). [Front-end] FLOW ANIMATION구현시 auto play속성을 적용할경우, 부자연스러운 멈춤 현상 발생.
+![스크린샷 2024-07-08 002901](https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/a6929cc5-faa1-46d7-9221-c64f94326f51)
 
-  **해결 방안): 간단하게 **플라스크서버 주소로 get요청**을보내 데이터를 실어 보내어 간단하게 해결 할수 있었습니다.** 
-  <br>
-  ( window.location.replace("flask서버주소") ) 사용.
 
-- ### 2). 장바구니페이지에서 선택한 제품만의 수량 정보만 최종 주문/결제 페이지로 이동되지 않고 모든 수량 정보가 도착함.
-    ![image](https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/157596156/e156e1ac-e2da-4b83-85e3-107cf3aa0da5)
+- ### 2). [Back-end] React에서 Spring서버로 비동기 API요청을 보냈지만 처리하지못하는 상황 발생.
+  ![스크린샷 2024-07-08 002901](https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/6f61d3c3-aad1-438c-a660-c47d294e9f43)
 
-   **해결 방안):** 이를 구분해주기위해 서버에서 다시한번 장바구니 목록 데이터를 불러와, **이중for문 돌려** <br>
-   **선택한 체크박스의 장바구니 식별자**와 일치하는 순간의 **인덱스번호로 수량이 담긴 배열에서도 동일한 <br>
-  인덱스번호 값**에 해당한 수량을 정확하게 뽑아와 해결할수 있었습니다.
 
+- ### 3). [Data Modeling]
+![스크린샷 2024-07-08 002925](https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/7d711e2b-2d68-4fb4-90f4-05aca77c7d2d)
   
 
 
