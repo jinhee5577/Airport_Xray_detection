@@ -24,7 +24,7 @@
 
 
 ## 😎데이터 소개.
-<img width="850" alt="mainps" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/007e8a6f-f54e-4c26-813d-fc59a7221c5a">
+<img width="650" alt="mainps" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/007e8a6f-f54e-4c26-813d-fc59a7221c5a">
 
 ## 🌟개발 기능
 ![스크린샷 2024-06-29 212332](https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/c93e62b2-23c4-4f5e-a5ec-32cebe19643c)
