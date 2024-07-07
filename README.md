@@ -24,14 +24,9 @@
 - 단건 분석 페이지, 분석 다시보기.
 - 관리자 페이지 기능.
 
-## 🌟주요기술
-![image](https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/157596156/1da8684d-af63-4f53-b564-807d078525a5)
-**진희팀**의 대표적인 기술로는 **고객맞춤 향수추천** 서비스 입니다.<br>
-신규 고객이 설문조사를 진행할때 **체크박스** 마다 향기의 대표적인 향들이 **value값으로** 들어 있습니다.<br>
-원하는 항목으로 선택을 마치면 제출시 **우리의 대조군**과 비교할수 있는 **한줄의 데이터**가 완성됩니다.<br>
-이대상을 **파이썬 기반의 flask서버**로 전송하여 flask서버에서 우리가 준비해놓은 **대조군들을 불러와**<br>
-설문조사로 얻어진 한줄의 데이터 이둘을 **코사인유사도 체크 과정**을 거쳐 **가장 유사도가 높은 best5 향수식별자**를<br>
-우리의 **자바 서블릿 서버**로 전송해 줍니다. 이 **식별자 번호**로 DB에 저장된 **향수 정보**를 불어와 프론트UI로 보여줍니다.
+## 🌟개발 기능
+![스크린샷 2024-06-29 212332](https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/c93e62b2-23c4-4f5e-a5ec-32cebe19643c)
+
 
 ---- 
 <br>
@@ -55,6 +50,7 @@
 ## 📝 ERD
 ![스크린샷 2024-06-29 212236](https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/79471fec-1489-4825-9c3b-b2b0efc8ac96)
 
+<br>
 ## 💻 YOLORAY Main페이지 입니다.
 <img width="850" alt="mainps" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/aa4a8003-2cba-4313-be78-c889bf035e91">
 <img width="850" alt="mainps" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/74a8676b-a98a-41ea-8273-14a160c63554">
@@ -70,7 +66,7 @@
 <img width="410" alt="회원관리 페이지" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/a06acd88-c8d9-4c83-83d0-72be561254e9">
 <img width="600" alt="공지사항 페이지" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/965f5bb7-d03e-4c4b-a8c6-5c74afa30a22">
 <img width="410" alt="모델 업데이트 페이지" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/d1372440-fd20-4a64-add0-fc71aa8ed426">
-<img width="410" alt="모델 업데이트 페이지" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/3446488c-27ab-423c-89bd-b0f652f0783b">
+<img width="410" alt="모델 업데이트 페이지" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/5686c9e1-3391-4e93-b07b-f5a2dcbf2fc6">
 
 
 
