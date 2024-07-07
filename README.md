@@ -1,7 +1,5 @@
-# Airport_Xray_detection
-실전 융합 - 딥러닝을 이용한 공항 X-ray위해물품 자동 탐지시스템 프로젝트 repository 입니다.
-
 # 💡실전 융합 - 딥러닝을 이용한 공항 X-ray위해물품 자동 탐지시스템 프로젝트
+실전 융합 - 딥러닝을 이용한 공항 X-ray위해물품 자동 탐지시스템 프로젝트 repository 입니다.
 
 ----
 
@@ -51,6 +49,7 @@
 ![스크린샷 2024-06-29 212236](https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/79471fec-1489-4825-9c3b-b2b0efc8ac96)
 
 <br>
+
 ## 💻 YOLORAY Main페이지 입니다.
 <img width="850" alt="mainps" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/aa4a8003-2cba-4313-be78-c889bf035e91">
 <img width="850" alt="mainps" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/74a8676b-a98a-41ea-8273-14a160c63554">
