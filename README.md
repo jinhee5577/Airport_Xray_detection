@@ -56,7 +56,7 @@
 ![스크린샷 2024-06-29 212236](https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/79471fec-1489-4825-9c3b-b2b0efc8ac96)
 
 ## 💻 YOLORAY Main페이지 입니다.
-<img width="650" alt="mainps" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/aa4a8003-2cba-4313-be78-c889bf035e91">
+<img width="850" alt="mainps" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/aa4a8003-2cba-4313-be78-c889bf035e91">
 
 ## 💻 PLAY SCENT 서브페이지 입니다.
 <img width="120" alt="설문조사" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/157596156/24a8e243-11b3-4a68-848e-df41a0489c87">
