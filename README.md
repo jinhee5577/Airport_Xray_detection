@@ -44,6 +44,8 @@
 ## 📝 메뉴구성
 <img width="650" alt="진희팀 유스2" src="https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/3159a63c-b914-4df3-af85-f22542dca35b">
 
+## 🔄서비스 흐름도
+<img width="800" alt="PLAYScent최종 서비스흐름도" src="https://github.com/jinhee5577/Airport_Xray_reactFront/assets/82584287/80b5d482-7bc5-4f1d-8a89-c29f424fef40">
 
 ----
 
