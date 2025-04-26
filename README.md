@@ -1,7 +1,7 @@
 # 💡실전 융합 - 딥러닝을 이용한 공항 X-ray위해물품 자동 탐지시스템 프로젝트
 실전 융합 - 딥러닝을 이용한 공항 X-ray위해물품 자동 탐지시스템 프로젝트 repository 입니다. 
 
-##@ 📌React Front-end repository: https://github.com/jinhee5577/Airport_Xray_reactFront
+### 📌React Front-end repository: https://github.com/jinhee5577/Airport_Xray_reactFront 입니다.
 
 ----
 ![스크린샷 2024-07-08 002646](https://github.com/2023-SMHRD-KDT-AI-16/PLAY_SCENT/assets/82584287/a1d80fa6-ecd7-4caa-bfba-f7405e1d80c5)
